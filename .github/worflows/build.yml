@@ -1,0 +1,10 @@
+name: build
+on:
+  push:
+  branch:
+      - main
+jobs:
+  DigaOla:
+    runs-on: ubunto-latest
+    steps: 
+      - run: echo "ola"
