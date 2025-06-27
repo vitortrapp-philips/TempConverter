@@ -16,5 +16,8 @@ jobs:
         with:
           java-version: '21'
           distruibuition: 'temurin'
-          cache: 'gradle'
+      
+      - name: Setup gradle
+        uses: gradle/actions/setup-gradle@v4
+        
       - run: ./gradlew build
