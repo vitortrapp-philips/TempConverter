@@ -2,6 +2,8 @@ name: DigaOla
 description: "Action para printar ola no console"
 
 runs:
-  - name: Diga Ola
-    run: echo "ola"
-    shell: bash
+  using: "composite"
+  steps:
+    - name: Diga Ola
+      run: echo "ola"
+      shell: bash
