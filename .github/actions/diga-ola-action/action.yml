@@ -4,3 +4,4 @@ description: "Action para printar ola no console"
 runs:
   - name: Diga Ola
     run: echo "ola"
+    shell: bash
